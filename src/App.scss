@@ -1,0 +1,19 @@
+.wrap {
+  min-height: 100vh;
+
+  aside {
+    width  : 20vw;
+    height : 80vh;
+    display: inline-block;
+    margin : 20px 20px 0px 40px;
+  }
+
+  main {
+    display : inline-block;
+    position: relative;
+    top     : -55px;
+    width   : calc(80vw - 140px);
+    height  : 80vh;
+    margin  : 0px 40px 0px 20px;
+  }
+}

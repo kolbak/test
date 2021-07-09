@@ -1,0 +1,121 @@
+.footer-card {
+  padding              : 40px 40px 10px 40px;
+  display              : grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows   : 1fr 3fr;
+  background           : #222222;
+
+  * {
+    color: white;
+  }
+
+  h5 {
+    color: rgba(172, 175, 243, 1);
+  }
+
+  .footer-logo1440 {
+    width        : 200px;
+    margin-bottom: 20px;
+  }
+
+  .btns-download {
+    grid-column-start: 1;
+    grid-column-end  : 2;
+    grid-row-start   : 2;
+    grid-row-end     : 3;
+
+    display: inline-block;
+
+    .btn-appstore {
+      margin-right: 10px
+    }
+
+    .button {
+      background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2C2C2C;
+      border    : rgba(152, 127, 168, 0.596) 2px solid;
+      padding   : 5px 7px;
+      height    : 60px;
+
+      .icon {
+        position    : relative;
+        top         : -13px;
+        margin-right: 10px;
+      }
+
+      div {
+        display: inline-block;
+
+        p {
+          text-align: left;
+          margin    : 0;
+        }
+
+        .dwnld-p {
+          font-size: .7rem;
+        }
+
+        .os {
+          font-weight: 500;
+          font-size  : 1.3rem;
+        }
+      }
+    }
+
+    .button:focus {
+      background: linear-gradient(238.37deg, rgba(90, 97, 231, 0.794) 6.34%, rgba(30, 30, 40, 0.424) 103.77%), #2C2C2C;
+    }
+  }
+
+  .info-table {
+    grid-column-start: 2;
+    grid-column-end  : 3;
+    grid-row-start   : 1;
+    grid-row-end     : 3;
+    justify-self     : center;
+    width            : 70%;
+    display          : inline-block;
+
+    td {
+      background: #222222;
+
+      a {
+        text-decoration: none;
+        color          : white;
+      }
+    }
+  }
+
+  .our-contacts {
+    grid-column-start: 1;
+    grid-column-end  : 2;
+    grid-row-start   : 3;
+    grid-row-end     : 4;
+  }
+
+  hr {
+    grid-column-start: 1;
+    grid-column-end  : 3;
+    grid-row-start   : 4;
+    grid-row-end     : 5;
+    background       : rgba(172, 175, 243, 1);
+  }
+
+  .all-rights {
+    grid-column-start: 1;
+    grid-column-end  : 3;
+    grid-row-start   : 5;
+    grid-row-end     : 6;
+
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items        : center;
+
+    :first-child {
+      justify-self: left;
+    }
+
+    :last-child {
+      justify-self: right;
+    }
+  }
+}

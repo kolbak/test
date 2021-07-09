@@ -1,0 +1,135 @@
+.main-content {
+  width : 100%;
+  height: 100%;
+
+  .card-header {
+    background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2C2C2C;
+    height    : 17vh;
+
+    .header-info {
+      color: white;
+
+      display              : grid;
+      grid-template-columns: 2fr 3fr 1fr;
+      grid-template-rows   : 1fr;
+      column-gap           : 30px;
+
+      .notifics {
+
+        .first,
+        .last {
+          img {
+            margin: 3px 3px 0px 3px;
+          }
+
+          .bw {
+            float: right;
+          }
+        }
+
+        hr {
+          border       : lightgrey 1px solid;
+          border-radius: 5px;
+        }
+      }
+
+      .seasons {
+        display           : grid;
+        grid-template-rows: 1fr 1fr;
+
+        .sort {
+          align-self: center;
+
+          padding      : 2px;
+          border       : rgba(152, 127, 168, 0.596) 2px solid;
+          border-radius: 5px;
+
+          .sort-btn {
+            width     : calc(50% - 3px);
+            margin    : 1px;
+            border    : none;
+            background: transparent;
+            color     : rgba(152, 127, 168, 0.767);
+            transition: .3s;
+          }
+
+          .active {
+            color     : white;
+            background: rgba(90, 96, 231, 1);
+          }
+        }
+
+        .info {
+          display              : grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows   : 1fr;
+          column-gap           : 15px;
+
+          .box {
+            background   : linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2C2C2C;
+            border       : rgba(152, 127, 168, 0.596) 2px solid;
+            border-radius: 5px;
+            height       : 100%;
+            padding      : 3px;
+
+            p {
+              font-weight: 400;
+              width      : 100%;
+              height     : 100%;
+              position   : relative;
+
+              span {
+                position: absolute;
+                top     : 60%;
+                right   : 0;
+                color   : rgba(255, 121, 91, 1)
+              }
+            }
+          }
+        }
+      }
+
+      .share {
+        p {
+          margin: 0;
+          color : rgba(152, 127, 168, 0.767);
+        }
+      }
+    }
+  }
+
+  .card-body {
+    #button-format {
+      background: white;
+      border    : none;
+      color     : grey;
+    }
+
+    .table {
+      margin-top: 20px;
+
+      th {
+        user-select: none;
+        color: rgba(144, 144, 144, 1);
+        font-size: small;
+
+        img {
+          outline   : 1px ssolid red;
+          transform: rotate(180deg);
+        }
+
+        .is-sort {
+          transform: rotate(0deg);
+        }
+      }
+
+      .white {
+        background: white;
+      }
+
+      .rate {
+        color: rgba(90, 96, 231, 1)
+      }
+    }
+  }
+}

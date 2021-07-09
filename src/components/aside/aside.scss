@@ -1,0 +1,87 @@
+.aside-content {
+  width : 100%;
+  height: 100%;
+  background: white;
+  // margin: 20px 20px 20px 40px;
+  .card-header-info {
+    height    : 17vh;
+    background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2C2C2C;
+
+    .info {
+      display              : grid;
+      grid-template-columns: 1fr 2fr;
+
+      p {
+        color: white;
+      }
+
+      .rate {
+        font-size: 1.5rem;
+      }
+    }
+
+    .btn-edit {
+      color          : rgba(152, 127, 168, 0.767) !important;
+      border         : none;
+      background     : transparent !important;
+      outline        : none;
+      text-decoration: underline;
+      margin         : 0;
+    }
+  }
+
+  .aside-body {
+    height    : 90%;
+
+    .card {
+      border: none;
+    }
+
+    .aside-header,
+    .aside-btn,
+    .aside-btn:focus {
+      background: white;
+      border    : none;
+      transition: .3s;
+    }
+
+    .aside-header {
+      width     : 100%;
+      height    : 100%;
+      text-align: left;
+    }
+
+    .aside-btn {
+      text-align: left;
+      color     : black;
+    }
+
+    .aside-header.active,
+    .aside-btn.active,
+    .aside-btn:active {
+      background: #EFEFFD;
+      color     : #5A60E7;
+    }
+
+    .aside-btn,
+    .aside-btn:focus {
+      box-shadow: none;
+    }
+  }
+
+  .btn-exit,
+  .btn-exit:focus {
+    background: white;
+    border    : none;
+    transition: .3s;
+    text-align: left;
+    color     : black;
+    box-shadow: none;
+  }
+
+  .btn-exit.active,
+  .btn-exit:active {
+    background: #EFEFFD !important;
+    color     : #5A60E7 !important;
+  }
+}
