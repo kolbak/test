@@ -43,14 +43,16 @@ function Aside() {
   return (
     <Card className="aside-content">
       <Card.Header className="card-header-info">
-        <div className="info">
-          <img src={ava} alt="" />
-          <div className="text">
-            <p className="rate">89.40</p>
-            <p>Елишакашвили Михо</p>
+        <div className="aside-header-wrap">
+          <div className="info">
+            <img src={ava} alt="" />
+            <div className="text">
+              <p className="rate">89.40</p>
+              <p>Елишакашвили Михо</p>
+            </div>
           </div>
+          <Button className="btn-edit">Редактировать</Button>
         </div>
-        <Button className="btn-edit">Редактировать</Button>
       </Card.Header>
       <Card.Body>
         <Accordion className="aside-body" >
@@ -87,7 +89,7 @@ function Aside() {
             </Accordion.Collapse>
           </Card>
         </Accordion>
-        <Button onClick={(e)=> {e.target.classList.add('active')}} variant="light" className="btn-exit">Выйти</Button>
+        <Button onClick={(e) => { e.target.classList.add('active') }} variant="light" className="btn-exit">Выйти</Button>
       </Card.Body>
     </Card>
   );

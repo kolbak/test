@@ -60,27 +60,32 @@ function Main() {
     setSortStatus(sortStatus.map((item, index) => index === number ? !item : false));
   }
 
+  let [screenWidth, setScreenWidth] = useState(window.screen.availWidth);
+  window.addEventListener('resize', () => {
+    setScreenWidth(window.screen.availWidth);
+  })
+
   return (
     <Card className="main-content">
       <Card.Header className="card-header">
         <div className="header-info">
           <div className="notifics">
             <div className="first">
-              <img src={not} alt="" />
-              <img src={not} alt="" />
-              <img src={not} alt="" />
+              {screenWidth >= 825 && <img src={not} alt="" />}
+              {screenWidth >= 925 && <img src={not} alt="" />}
+              {screenWidth >= 1070 && <img src={not} alt="" />}
 
-              <div className="bw">
-                <img src={notBw} alt="" />
-                <img src={notBw} alt="" />
-              </div>
+            </div>
+            <div className="bw">
+              {screenWidth >= 765 && <img src={notBw} alt="" />}
+              <img src={notBw} alt="" />
             </div>
             <hr />
             <div className="last">
-              <img src={not} alt="" />
-              <img src={not} alt="" />
-              <img src={not} alt="" />
-              <img src={not} alt="" />
+              {screenWidth >= 765 && <img src={not} alt="" />}
+              {screenWidth >= 825 && <img src={not} alt="" />}
+              {screenWidth >= 925 && <img src={not} alt="" />}
+              {screenWidth >= 1070 && <img src={not} alt="" />}
               <img src={not} alt="" />
             </div>
           </div>

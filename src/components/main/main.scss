@@ -4,10 +4,11 @@
 
   .card-header {
     background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2C2C2C;
-    height    : 17vh;
+    height    : fit-content;
 
     .header-info {
-      color: white;
+      min-height: 18vh;
+      color     : white;
 
       display              : grid;
       grid-template-columns: 2fr 3fr 1fr;
@@ -15,25 +16,41 @@
       column-gap           : 30px;
 
       .notifics {
+        display              : grid;
+        grid-template-columns: 5fr 2fr;
 
         .first,
-        .last {
+        .last,
+        .bw {
           img {
-            margin: 3px 3px 0px 3px;
-          }
-
-          .bw {
-            float: right;
+            width  : 2.2rem;
+            display: inline-block;
+            margin : 3px 3px 0px 3px;
           }
         }
 
         hr {
+          grid-column-start: 1;
+          grid-column-end  : 3;
+          grid-row-start   : 2;
+          grid-row-end     : 3;
+
+          width: 100%;
+
           border       : lightgrey 1px solid;
           border-radius: 5px;
+        }
+
+        .last {
+          grid-column-start: 1;
+          grid-column-end  : 2;
+          grid-row-start   : 3;
+          grid-row-end     : 4;
         }
       }
 
       .seasons {
+
         display           : grid;
         grid-template-rows: 1fr 1fr;
 
@@ -110,11 +127,11 @@
 
       th {
         user-select: none;
-        color: rgba(144, 144, 144, 1);
-        font-size: small;
+        color      : rgba(144, 144, 144, 1);
+        font-size  : small;
 
         img {
-          outline   : 1px ssolid red;
+          outline  : 1px ssolid red;
           transform: rotate(180deg);
         }
 
