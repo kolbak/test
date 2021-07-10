@@ -40,6 +40,10 @@ function Aside() {
     );
   }
 
+  //? кнопка выход
+  const setActive = (e) => { e.target.classList.add('active'); }
+  const setUnactive = (e) => { e.target.classList.remove('active'); }
+
   return (
     <Card className="aside-content">
       <Card.Header className="card-header-info">
@@ -89,7 +93,9 @@ function Aside() {
             </Accordion.Collapse>
           </Card>
         </Accordion>
-        <Button onClick={(e) => { e.target.classList.add('active') }} variant="light" className="btn-exit">Выйти</Button>
+        <br />
+        <br />
+        <Button onFocus={setActive} onBlur={setUnactive} variant="light" className="btn-exit">Выйти</Button>
       </Card.Body>
     </Card>
   );
