@@ -27,8 +27,6 @@
       }
 
       .btn-edit {
-        // grid-row-start   : 2;
-        // grid-row-end     : 3;
         justify-self: left;
 
         color          : rgba(152, 127, 168, 0.767) !important;
@@ -83,6 +81,8 @@
 
   .btn-exit,
   .btn-exit:focus {
+    position: relative;
+    left: 8px;
     background: white;
     border    : none;
     transition: .3s;

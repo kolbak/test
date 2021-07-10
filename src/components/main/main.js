@@ -73,19 +73,19 @@ function Main() {
             <div className="first">
               {screenWidth >= 825 && <img src={not} alt="" />}
               {screenWidth >= 925 && <img src={not} alt="" />}
-              {screenWidth >= 1070 && <img src={not} alt="" />}
+              {screenWidth >= 1385 && <img src={not} alt="" />}
 
             </div>
             <div className="bw">
-              {screenWidth >= 765 && <img src={notBw} alt="" />}
+              {screenWidth >= 1385 && <img src={notBw} alt="" />}
               <img src={notBw} alt="" />
             </div>
             <hr />
             <div className="last">
-              {screenWidth >= 765 && <img src={not} alt="" />}
-              {screenWidth >= 825 && <img src={not} alt="" />}
-              {screenWidth >= 925 && <img src={not} alt="" />}
-              {screenWidth >= 1070 && <img src={not} alt="" />}
+              {screenWidth >= 815 && <img src={not} alt="" />}
+              {screenWidth >= 950 && <img src={not} alt="" />}
+              {screenWidth >= 1170 && <img src={not} alt="" />}
+              {screenWidth >= 1385 && <img src={not} alt="" />}
               <img src={not} alt="" />
             </div>
           </div>
